@@ -1,0 +1,10 @@
+.error-img{
+    height: 50px;
+}
+.message-wrapper{
+    grid-column: 1/4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

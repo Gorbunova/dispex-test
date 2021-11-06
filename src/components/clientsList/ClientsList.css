@@ -1,0 +1,107 @@
+.newClient {
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: #fff;
+    transition: .5s all;
+}
+.newClient > * {
+    transition: .5s all;
+}
+.newClient:hover{
+    background-color: rgb(208, 231, 211);
+}
+.newClient:hover > *{
+    transform: scale(1.3);
+}
+
+.client-item{
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    border: 1px solid rgb(141, 139, 139);
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+.client-item__content{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    min-height: 92px;
+}
+
+.client-item__img{
+font-size: 30px;
+}
+.client-item__img-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.client-item__control{
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+}
+.client-item__control-item{
+    background-color: rgb(241, 242, 243);
+    border: none;
+    border-top: 1px solid rgb(141, 139, 139);
+    transition: .5s all;
+}
+.client-item__control-item:hover{
+    background-color: rgb(217, 227, 236);
+}
+.client-item__control-item:hover > *{
+    transform: scale(1.2);
+}
+.client-item__control-item > *{
+    transition: .5s all;
+}
+.client-item__control-item:first-child{
+    border-right: 1px solid rgb(141, 139, 139);
+}
+.client-item__data{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.client-item__data-phone, .client-item__data-name, .client-item__data-email{
+    margin: 0;
+}
+.client-item__data-phone{
+    color: green;
+}
+.client-item__data-email{
+    color: gray;
+}
+.client-item__data-icon{
+    margin-right: 10px;
+}
+.clients-wrapper{
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.clients__address{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.clients__address p{
+    margin: 0;
+    margin-right: 10px;
+    font-weight: bold;
+}
